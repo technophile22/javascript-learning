@@ -18,6 +18,7 @@ var user = "2";
      console.log("condition is true");
 }
 
+
  console.log(2+2);
  console.log("2" + 2);
  console.log(2 + "2"); 
