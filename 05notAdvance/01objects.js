@@ -20,9 +20,14 @@ var raghav = new User("Raghav", 2)
 
 //console.log(raghav);
 raghav.getCourseCount();
-raghav.getFirstName();
+
+if(raghav.hasOwnProperty("firstName")){
+    raghav.getFirstName();
+}
+//checks if the object has a particular property available or not
 
 var sam = new User("Sam", 1);
 //console.log(sam);
 sam.getCourseCount();
 sam.getFirstName();
+//this will give undefined if the object does not have the property firstName
