@@ -36,3 +36,6 @@ console.log(addFive(5));
 //another way to call it
 console.log(doAddition(5)(5));
 
+//curring 
+//doAddition()()()
+
