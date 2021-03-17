@@ -20,6 +20,23 @@ class User{
     getCourseList(){
         return this.#courseList;
     }
+    
+    login(){
+        return "you are looged in";
+    }
+}
+
+class SubAdmin extends User{
+    constructor(name, email){
+        super(name, email);
+    }
+    getAdminInfo(){
+        return "I am subadmin";
+    }
+
+    login() {
+        return "login for admin only";
+    }
 }
 
 //let raghav = User("raghav", "raghavmangal22@gmail.com");
@@ -31,3 +48,8 @@ console.log(rock.getInfo());
 rock.enrollCourse("Angular bootcamp");
 console.log(rock.getCourseList());
 console.log(rock.courseList); //cannot access because variable is private
+
+const tom = new SubAdmin("tom", "tom@jerry.com");
+console.log(tom.getAdminInfo());
+console.log(tom.login());
+console.log(tom.getInfo());
